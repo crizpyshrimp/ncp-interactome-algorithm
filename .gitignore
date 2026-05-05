@@ -1,0 +1,116 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- Virtual environments ---
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# --- Testing / coverage ---
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# --- Type checkers / linters ---
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+
+# --- IDE / editor ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# --- OS junk ---
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- Project: large / generated artifacts ---
+# Keep raw inputs out of git unless small & curated. Use external storage / LFS.
+data_raw/af3/**/*.cif
+data_raw/af3/**/*.pdb
+data_raw/af3/**/*.zip
+data_raw/af3/**/*.tar
+data_raw/af3/**/*.tar.gz
+data_raw/structures/**/*.cif.gz
+data_raw/structures/**/*.pdb.gz
+
+# Bulky processed / result files
+data_processed/**/*.parquet
+data_processed/**/*.feather
+data_processed/**/*.h5
+data_processed/**/*.hdf5
+data_processed/**/*.npz
+data_processed/**/*.npy
+
+results/**/*.parquet
+results/**/*.h5
+results/**/*.hdf5
+results/**/*.npz
+results/**/*.pkl
+results/**/*.joblib
+
+# MD trajectories and other huge binaries
+*.dcd
+*.xtc
+*.trr
+*.nc
+
+# Logs
+logs/
+*.log
+
+# --- Secrets / local config ---
+*.env
+.envrc
+secrets.yaml
+secrets.yml
+credentials.json
+
+# --- Never ignore .gitkeep files (keep empty dirs tracked) ---
+!.gitkeep
+!**/.gitkeep
